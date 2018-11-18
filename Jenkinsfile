@@ -6,13 +6,10 @@ pipeline {
         echo 'Baseline stage'
       }
     }
-    stage('') {
+    stage('migrate') {
       steps {
         sleep 2
-        timeout(time: 5) {
-          echo 'migrate'
-        }
-
+        echo 'migrate stage'
       }
     }
   }
